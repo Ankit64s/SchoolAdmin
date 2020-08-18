@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".registration_techer">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="10dp"
+                android:id="@+id/r1"
+                android:background="#E29696" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r1"
+                android:layout_marginTop="10dp"
+                android:text="Welcome to Login Page"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:background="@drawable/borderedittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:inputType="none"
+                android:editable="false"
+                android:id="@+id/tri"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/r2"
+                android:layout_below="@id/tri"
+                android:background="#E29696" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/borderedittext"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="25dp"
+                android:hint="Enter Id"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_below="@id/r2"
+                android:editable="false"
+                android:inputType="none"
+                android:id="@+id/mobilepass"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobilepass"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:background="@drawable/borderedittext"
+                android:textStyle="italic"
+                android:text="Send Code"
+                android:id="@+id/sendcode"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

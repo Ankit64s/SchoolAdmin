@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".admin_update_class_teacher">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="10dp"
+                android:background="#E29696"
+                android:id="@+id/r1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Class Teacher"
+                android:layout_below="@id/r1"
+                android:textSize="35dp"
+                android:fontFamily="serif-monospace"
+                android:background="@drawable/borderedittext"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FF9800"
+                android:id="@+id/ss"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#E29696"
+                android:id="@+id/r2"
+                android:layout_below="@id/ss"/>
+
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r2"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="25dp"
+                android:hint=" Class"
+                android:id="@+id/enterclass"/>
+
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r2"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/enterclass"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="25dp"
+                android:hint="Section"
+                android:id="@+id/entersection"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enterclass"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"
+                android:text="Fetch"
+                android:textSize="28dp"
+                android:background="@drawable/borderedittext"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/detailfetch"
+                android:textColor="#FF9800"
+                android:fontFamily="serif-monospace"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailfetch"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="20dp"
+                android:text="Current : "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:id="@+id/ss1"
+                android:textColor="#FF9800"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailfetch"
+                android:layout_toRightOf="@id/ss1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/borderedittext"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:id="@+id/currentteachername"
+                android:layout_marginRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/r3"
+                android:layout_below="@+id/ss1"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="Enter New : "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:layout_below="@id/r3"
+                android:id="@+id/ss2"
+                android:textColor="#FF9800"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/ss2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borderedittext"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:id="@+id/newteachername"
+                android:layout_below="@id/r3"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ss2"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/borderedittext"
+                android:text="Update"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/updateclassteachername"
+                android:textColor="#FF9800"
+                android:fontFamily="serif-monospace"/>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

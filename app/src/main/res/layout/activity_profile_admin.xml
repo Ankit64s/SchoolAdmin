@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".Profile_admin">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="10dp"
+                android:background="#E29696" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Student's Corner"
+        android:background="@drawable/borderedittext"
+        android:id="@+id/textr"
+        android:textSize="35dp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F39408"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@id/textr"
+                android:layout_height="10dp"
+                android:background="#E29696" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addstudent"
+        android:layout_below="@id/textr"
+        android:layout_marginTop="40dp"
+        android:text="Add Student"
+        android:textSize="25dp"
+        android:textColor="#F39408"
+        android:background="@drawable/borderedittext"
+        android:layout_marginLeft="30dp"/>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/addstudent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textr"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:textSize="25dp"
+        android:textColor="#F39408"
+        android:background="@drawable/borderedittext"
+        android:text="Delete Student"
+        android:id="@+id/deletestu"/>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addstudent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/viewstudent"
+        android:textSize="25dp"
+        android:textColor="#F39408"
+        android:background="@drawable/borderedittext"
+        android:text="View Student"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deletestu"
+        android:layout_toRightOf="@id/viewstudent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:textSize="25dp"
+        android:textColor="#F39408"
+        android:background="@drawable/borderedittext"
+        android:text="Edit Student"
+        android:id="@+id/editstudent"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@id/editstudent"
+                android:layout_marginTop="40dp"
+                android:layout_height="10dp"
+                android:background="#E29696" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewstudent"
+        android:background="@drawable/borderedittext"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textsd"
+        android:text="Teacher's Corner"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:fontFamily="serif-monospace"
+        android:textSize="35dp"
+        android:textColor="#F39408"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@id/textsd"
+                android:layout_height="10dp"
+                android:background="#E29696" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textsd"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/addteacher"
+                android:textSize="25dp"
+                android:textColor="#F39408"
+                android:background="@drawable/borderedittext"
+                android:text="Add Teacher"/>
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textsd"
+                android:layout_toRightOf="@id/addteacher"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:textSize="25dp"
+                android:textColor="#F39408"
+                android:background="@drawable/borderedittext"
+                android:text="View Teacher"
+                android:id="@+id/viewteacher"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addteacher"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/editteacher"
+                android:textSize="25dp"
+                android:textColor="#F39408"
+                android:background="@drawable/borderedittext"
+                android:text="Edit Teacher"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewteacher"
+                android:layout_toRightOf="@id/editteacher"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:textSize="25dp"
+                android:textColor="#F39408"
+                android:background="@drawable/borderedittext"
+                android:text="Delete Teacher"
+                android:id="@+id/deleteteacher"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editteacher"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/updateclassteacher"
+                android:textSize="25dp"
+                android:textColor="#F39408"
+                android:layout_centerInParent="true"
+                android:background="@drawable/borderedittext"
+                android:text="Update Class Teacher"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

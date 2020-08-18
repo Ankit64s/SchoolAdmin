@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".admin_add_student">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="10dp"
+                android:background="#E29696" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="New Student Registration"
+                android:id="@+id/texts1"
+                android:background="@drawable/borderedittext"
+                android:textColor="#F39408"
+                android:textStyle="italic"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:layout_marginTop="70dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@id/texts1"
+                android:layout_height="10dp"
+                android:background="#E29696" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="10"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Student's Roll Number"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/rollstudent"
+                android:layout_below="@id/texts1"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLength="150"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Student's Name"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/namestudent"
+                android:layout_below="@id/rollstudent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLength="150"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Father's Name"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/fathersname"
+                android:layout_below="@id/namestudent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Mother's Name"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/mothersname"
+                android:layout_below="@id/fathersname"
+                android:inputType="textPersonName"
+                android:maxLength="150"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Mobile Number"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/mobile"
+                android:layout_below="@id/mothersname"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Address"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/address"
+                android:layout_below="@id/mobile"
+                android:inputType="textPostalAddress"
+                android:maxLength="150"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Class"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/classes"
+                android:layout_below="@id/address"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Section"
+                android:textSize="22dp"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:id="@+id/section"
+                android:layout_below="@id/classes"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Class Teacher Name"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/classteacher"
+                android:layout_below="@id/section"
+                android:inputType="textPersonName"
+                android:maxLength="150"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Fees"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/fees"
+                android:layout_below="@id/classteacher"
+                android:inputType="numberDecimal"
+                android:maxLength="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Comments (If Any)"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/addinfo"
+                android:layout_below="@id/fees"
+                android:inputType="text"
+                android:maxLength="55000"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Student's Aadhaar"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/adhaarstu"
+                android:layout_below="@id/addinfo"
+                android:inputType="number"
+                android:maxLength="12"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Parent's Aadhaar"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:id="@+id/adhaarpar"
+                android:layout_below="@id/adhaarstu"
+                android:inputType="number"
+                android:maxLength="12"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                android:layout_below="@id/adhaarpar"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:text="Submit"
+                android:textColor="#F39408"
+                android:fontFamily="serif-monospace"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/borderedittext"
+                android:layout_marginBottom="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

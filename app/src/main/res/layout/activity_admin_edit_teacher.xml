@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".admin_edit_teacher">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="10dp"
+                android:background="#E29696" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:text="Update Teacher Details"
+                android:layout_marginTop="70dp"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:fontFamily="serif-monospace"
+                android:textStyle="italic"
+                android:textAllCaps="true"
+                android:id="@+id/ss"
+                android:textColor="#FF9800"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ss"
+                android:layout_height="10dp"
+                android:background="#E29696"
+                android:id="@+id/r1"/>
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r1"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/borderedittext"
+                android:hint="Enter Id"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:inputType="number"
+                android:maxLength="20"
+                android:id="@+id/teacherid"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r1"
+                android:layout_toRightOf="@id/teacherid"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/borderedittext"
+                android:text="Fetch"
+                android:fontFamily="serif-monospace"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:id="@+id/teacherfetch"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#FF9800"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teacherid"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="20dp"
+                android:text="Name : "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:id="@+id/ss1"
+                android:textColor="#FF9800"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teacherfetch"
+                android:layout_toRightOf="@id/ss1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/borderedittext"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:id="@+id/teachername"
+                android:layout_marginRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/r2"
+                android:layout_below="@+id/teachername"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="Mobile : "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:layout_below="@id/r2"
+                android:id="@+id/ss2"
+                android:textColor="#FF9800"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/ss2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borderedittext"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:id="@+id/teachermobile"
+                android:layout_below="@id/r2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/r3"
+                android:layout_below="@+id/teachermobile"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="Address : "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:layout_below="@id/r3"
+                android:id="@+id/ss3"
+                android:textColor="#FF9800"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borderedittext"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:id="@+id/teacheraddress"
+                android:layout_below="@id/r3"
+                android:layout_toRightOf="@id/ss3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/r4"
+                android:layout_below="@+id/teacheraddress"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="Adhaar : "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:layout_below="@id/r4"
+                android:id="@+id/ss4"
+                android:textColor="#FF9800"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borderedittext"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:id="@+id/teacheradhar"
+                android:layout_below="@id/r4"
+                android:layout_toRightOf="@id/ss4"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/r5"
+                android:layout_below="@+id/teacheradhar"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="Salary : "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:layout_below="@id/r5"
+                android:id="@+id/ss5"
+                android:textColor="#FF9800"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borderedittext"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:id="@+id/teachersalary"
+                android:layout_below="@id/r5"
+                android:layout_toRightOf="@id/ss5"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/r6"
+                android:layout_below="@+id/teachersalary"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="Comments: "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="24dp"
+                android:layout_below="@id/r6"
+                android:id="@+id/ss6"
+                android:textColor="#FF9800"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borderedittext"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:id="@+id/teachercomments"
+                android:layout_below="@id/r6"
+                android:layout_toRightOf="@id/ss6"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/r7"
+                android:layout_below="@+id/teachercomments"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="Notice : "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:layout_below="@id/r7"
+                android:id="@+id/ss7"
+                android:textColor="#FF9800"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borderedittext"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:id="@+id/teachernotice"
+                android:layout_below="@id/r7"
+                android:layout_toRightOf="@id/ss7"
+                android:layout_marginBottom="60dp"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teachernotice"
+                android:id="@+id/editteach"
+                android:layout_marginBottom="70dp"
+                android:text="Update Record"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textSize="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#FF9800"
+                android:fontFamily="serif-monospace"
+                android:background="@drawable/borderedittext"/>
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

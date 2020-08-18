@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="350px"
+            android:layout_height="350px"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/logo" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:id="@+id/relative">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:text="Admin Area"
+                    android:textStyle="italic"
+                    android:textAllCaps="true"
+                    android:textSize="30dp"
+                    android:fontFamily="serif-monospace"
+                    android:paddingTop="10dp"
+                    android:textColor="#F39408"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/borderedittext"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/studentmenu"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="App Privacy"
+                    android:textStyle="italic"
+                    android:textAllCaps="true"
+                    android:textSize="30dp"
+                    android:fontFamily="serif-monospace"
+                    android:paddingTop="10dp"
+                    android:textColor="#F39408"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/borderedittext"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/privacy"
+                    android:layout_below="@id/studentmenu"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="App TnC"
+                    android:textStyle="italic"
+                    android:textAllCaps="false"
+                    android:textSize="30dp"
+                    android:fontFamily="serif-monospace"
+                    android:paddingTop="10dp"
+                    android:textColor="#F39408"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/borderedittext"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/tnc"
+                    android:layout_below="@id/privacy"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
